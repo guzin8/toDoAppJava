@@ -8,6 +8,7 @@ Projede 5 katmanlı bir mimari kurulmuştur.
 3.	Core
 4.	Business
 5.	Api
+
 Entity Katmanı
 Burada toDoItem ve User varlıklarımı oluşturdum.
 Veritabanı ile bağlantıyı sağlamak için Spring’in @Entity(Veri tabanı nesnesi olduğunu söyler) @Table gibi anotasyonlarını kullandım. Ayrıca lombok’ı entegre ettim. Lombok bir kütüphanedir. @Data(getter ve setter oluşturur), @AllArgsConstoructor(Sınıfın tüm parametrelerini alarak constructor oluşturur) ve @NoArgsConstructor(Parametresiz Constructor üretir) gibi anotasyonlarıyla daha kısa ve temiz kod yazmamızı sağlar. 
