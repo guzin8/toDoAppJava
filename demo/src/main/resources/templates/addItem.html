@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>add</title>
+<link rel = "stylesheet" type = "text/css" href = "/webjars/bootstrap/css/bootstrap.min.css"/>
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container text-center mt-5">
+<h1>Add Item</h1>
+
+<form class="text-center" th:action="@{/process_addItem}" method = "post" th:object = "${toDoItem}">
+<div class = "m-3">
+<div class="mb-3">
+    <label for = "itemText" class="form-label">Item Name: </label>
+    <input id= "itemText" type="text" class="form-control col-5 m-auto" th:field = "*{itemName}">
+  </div>
+  
+ <!-- <div class="mb-3">
+    <label for = "itemText2" class="form-label">User id: </label>
+    <input id= "itemText2" type="text" class="form-control col-5 m-auto" th:field = "*{user.id}">
+  </div> 
+ --> 
+ <div class="mb-3 form-check">
+    <input id= "check" type="checkbox" class="form-check-input" th:field = "*{done}">
+    <label for = "check" class="form-check-label" >Done</label>
+  </div>
+
+<button class="btn btn-primary" type="submit">Add</button>
+
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
